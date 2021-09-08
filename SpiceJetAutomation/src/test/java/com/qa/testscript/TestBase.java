@@ -1,5 +1,7 @@
 package com.qa.testscript;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,6 +22,7 @@ public class TestBase {
 	LoginAndSignupPage loginandSignupPage;
 	
 	public WebDriver driver;
+	
 	@Parameters("url")
 	@BeforeClass
 	public void setUp(String url) {
@@ -30,6 +33,7 @@ public class TestBase {
 		driver.manage().window().maximize();
 		//driver.switchTo().alert().accept();
 		System.out.println("Before Suite");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	@AfterClass
 	public void tearDown() {

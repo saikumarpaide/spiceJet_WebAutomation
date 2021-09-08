@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Spicejet]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Spicejet]">
   <parameter name="SignupURL" value="https://beta.spicejet.com/profile/sign-up"/>
   <parameter name="url" value="https://beta.spicejet.com/"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.testscript.TC_FooterLinks_008">
+      <class name="com.qa.testscript.TC_FlightStatus_003_01">
         <methods>
           <include name="tearDown"/>
+          <include name="flight_Status"/>
           <include name="setUp"/>
-          <include name="checkFooterLinks"/>
         </methods>
-      </class> <!-- com.qa.testscript.TC_FooterLinks_008 -->
+      </class> <!-- com.qa.testscript.TC_FlightStatus_003_01 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Spicejet] -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-07T23:27:56 IST" name="Spicejet" finished-at="2021-09-07T23:28:41 IST" duration-ms="45381">
+  <suite name="Spicejet" duration-ms="58506" started-at="2021-09-08T21:29:20 IST" finished-at="2021-09-08T21:30:19 IST">
     <groups>
     </groups>
-    <test started-at="2021-09-07T23:27:56 IST" name="Test" finished-at="2021-09-07T23:28:41 IST" duration-ms="45381">
-      <class name="com.qa.testscript.TC_FooterLinks_008">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FooterLinks_008@5b239d7d]" started-at="2021-09-07T23:27:56 IST" name="setUp" finished-at="2021-09-07T23:28:07 IST" duration-ms="11480" status="PASS">
+    <test name="Test" duration-ms="58506" started-at="2021-09-08T21:29:20 IST" finished-at="2021-09-08T21:30:19 IST">
+      <class name="com.qa.testscript.TC_FlightStatus_003_01">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.testscript.TC_FlightStatus_003_01@545997b1]" name="setUp" is-config="true" duration-ms="35219" started-at="2021-09-08T21:29:20 IST" finished-at="2021-09-08T21:29:55 IST">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkFooterLinks()[pri:0, instance:com.qa.testscript.TC_FooterLinks_008@5b239d7d]" started-at="2021-09-07T23:28:07 IST" name="checkFooterLinks" finished-at="2021-09-07T23:28:32 IST" duration-ms="25119" status="PASS">
+        <test-method status="PASS" signature="flight_Status()[pri:0, instance:com.qa.testscript.TC_FlightStatus_003_01@545997b1]" name="flight_Status" duration-ms="20939" started-at="2021-09-08T21:29:55 IST" finished-at="2021-09-08T21:30:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkFooterLinks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FooterLinks_008@5b239d7d]" started-at="2021-09-07T23:28:32 IST" name="tearDown" finished-at="2021-09-07T23:28:41 IST" duration-ms="8723" status="PASS">
+        </test-method> <!-- flight_Status -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_FlightStatus_003_01@545997b1]" name="tearDown" is-config="true" duration-ms="2212" started-at="2021-09-08T21:30:16 IST" finished-at="2021-09-08T21:30:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testscript.TC_FooterLinks_008 -->
+      </class> <!-- com.qa.testscript.TC_FlightStatus_003_01 -->
     </test> <!-- Test -->
   </suite> <!-- Spicejet -->
 </testng-results>
