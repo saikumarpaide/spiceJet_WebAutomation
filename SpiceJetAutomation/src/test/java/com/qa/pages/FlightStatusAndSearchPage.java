@@ -12,7 +12,7 @@ public class FlightStatusAndSearchPage {
 		this.driver=driver;
 	}
 	
-	@FindBy(xpath = "(//div[@class='css-1dbjc4n r-zso239'])[2]")
+	@FindBy(xpath = "//div[text()='round trip']/preceding-sibling::*")
 	public WebElement Round_Trip;
 	
 	@FindBy(xpath = "//div[text()='From']/parent::*")

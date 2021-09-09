@@ -22,7 +22,7 @@ public class TC_FlightStatus_003_01 extends TestBase {
 	FlightStatusAndSearchPage fp;
 	
 	@Test
-	public void flight_Status() throws IOException {
+	public void flight_Status() throws IOException, InterruptedException {
 		String DateStamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
 
 		fp=PageFactory.initElements(driver, FlightStatusAndSearchPage.class);
@@ -38,12 +38,13 @@ public class TC_FlightStatus_003_01 extends TestBase {
 		fp.International.click();
 		driver.findElement(By.xpath("//div[text()='"+sh.getRow(1).getCell(1).getStringCellValue()+"']")).click();
 		fp.Look_For_Status.click();
+		Thread.sleep(10000);
 		
 		 File source =  ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	        File destination = new File(System.getProperty("user.dir")+"\\SpiceJetAutomation\\"+DateStamp+".png");
-	        FileUtils.copyFile(source, destination);
+	     File destination = new File(System.getProperty("user.dir")+"\\SpiceJetAutomationScreenshots\\"+DateStamp+".png");
+	     FileUtils.copyFile(source, destination);
 	        
-	        wb.close();
+	     wb.close();
 	}
 
 }
